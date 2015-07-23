@@ -20,4 +20,4 @@ def CER(prediction, true_labels):
   """
 
   errors = (prediction != true_labels).sum()
-  return errors/len(prediction)
+  return 1.0*errors/len(prediction)
